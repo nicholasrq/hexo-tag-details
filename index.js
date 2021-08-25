@@ -26,12 +26,12 @@ function tagDetails(args, content) {
   let modeFlag = isOpen(args.find(e => isMode(e)));
 
   let openMode = filtered.length < args.length ? modeFlag : openSetting;
-  let summary = util.htmlTag('summary', {}, filtered.join(' '));
+  let summary = util.htmlTag('summary', {}, filtered.join(' '), false);
   let rendered = hexo.render.renderSync({ text: content, engine: 'markdown' });
   let attrs = {};
 
   if (openMode) attrs.open = 'open';
   if (className) attrs.class = className;
 
-  return util.htmlTag('details', attrs, summary + rendered);
+  return util.htmlTag('details', attrs, summary + rendered, false);
 }
