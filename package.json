@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:hinastory/hexo-tag-details.git"
+    "url": "https://github.com/nicholasrq/hexo-tag-details.git"
   },
   "bugs": {
-    "url": "https://github.com/hinastory/hexo-tag-details/issues"
+    "url": "https://github.com/nicholasrq/hexo-tag-details/issues"
   },
   "keywords": [
     "hexo",
